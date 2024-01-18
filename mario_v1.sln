@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mario_v1", "mario_v1\mario_v1.csproj", "{7E974DED-142F-4CC8-ADD1-BFD054BC2FF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mario_v1", "mario_v1\mario_v1.csproj", "{B976598D-8338-4C7F-8899-751705B9CE10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7E974DED-142F-4CC8-ADD1-BFD054BC2FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E974DED-142F-4CC8-ADD1-BFD054BC2FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E974DED-142F-4CC8-ADD1-BFD054BC2FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E974DED-142F-4CC8-ADD1-BFD054BC2FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B976598D-8338-4C7F-8899-751705B9CE10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B976598D-8338-4C7F-8899-751705B9CE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B976598D-8338-4C7F-8899-751705B9CE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B976598D-8338-4C7F-8899-751705B9CE10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F4705F4D-F333-4AD5-9B03-CA25C8C35402}
+		SolutionGuid = {64DCF1A6-5C2D-4F03-8FA0-F2BFD93351FF}
 	EndGlobalSection
 EndGlobal

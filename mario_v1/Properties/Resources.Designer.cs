@@ -63,29 +63,9 @@ namespace mario_v1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap marion_stand {
+        internal static System.Drawing.Bitmap mario_stand {
             get {
-                object obj = ResourceManager.GetObject("marion_stand", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap marion_stand_2 {
-            get {
-                object obj = ResourceManager.GetObject("marion_stand_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap marion_stand_21 {
-            get {
-                object obj = ResourceManager.GetObject("marion_stand_21", resourceCulture);
+                object obj = ResourceManager.GetObject("mario_stand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

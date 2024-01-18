@@ -30,43 +30,39 @@
         {
             components = new System.ComponentModel.Container();
             Screen1 = new Panel();
-            Player = new PictureBox();
+            Player1 = new PictureBox();
             Base = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             Screen1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Player).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Player1).BeginInit();
             SuspendLayout();
             // 
             // Screen1
             // 
             Screen1.BackColor = Color.FromArgb(192, 192, 255);
-            Screen1.Controls.Add(Player);
-            Screen1.Dock = DockStyle.Top;
+            Screen1.Controls.Add(Player1);
             Screen1.Location = new Point(0, 0);
-            Screen1.Margin = new Padding(0);
             Screen1.Name = "Screen1";
-            Screen1.Size = new Size(663, 382);
+            Screen1.Size = new Size(595, 442);
             Screen1.TabIndex = 0;
             // 
-            // Player
+            // Player1
             // 
-            Player.BackColor = Color.Transparent;
-            Player.Image = Properties.Resources.marion_stand_21;
-            Player.Location = new Point(288, 268);
-            Player.Margin = new Padding(0);
-            Player.Name = "Player";
-            Player.Size = new Size(60, 80);
-            Player.TabIndex = 0;
-            Player.TabStop = false;
+            Player1.BackColor = Color.Transparent;
+            Player1.BackgroundImageLayout = ImageLayout.None;
+            Player1.Image = Properties.Resources.mario_stand;
+            Player1.Location = new Point(225, 253);
+            Player1.Name = "Player1";
+            Player1.Size = new Size(58, 87);
+            Player1.TabIndex = 2;
+            Player1.TabStop = false;
             // 
             // Base
             // 
             Base.BackColor = Color.FromArgb(128, 64, 0);
-            Base.Dock = DockStyle.Bottom;
-            Base.Location = new Point(0, 382);
-            Base.Margin = new Padding(0);
+            Base.Location = new Point(0, 438);
             Base.Name = "Base";
-            Base.Size = new Size(663, 57);
+            Base.Size = new Size(595, 47);
             Base.TabIndex = 1;
             // 
             // timer1
@@ -79,26 +75,24 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(663, 439);
+            ClientSize = new Size(594, 482);
             Controls.Add(Base);
             Controls.Add(Screen1);
-            KeyPreview = true;
-            Margin = new Padding(2);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Scence1";
             Load += Form1_Load;
             KeyDown += Form1_KeyDown;
             KeyUp += Form1_KeyUp;
             Screen1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)Player).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Player1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel Screen1;
+        private PictureBox Player1;
         private Panel Base;
         private System.Windows.Forms.Timer timer1;
-        private PictureBox Player;
     }
 }

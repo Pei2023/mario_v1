@@ -3,9 +3,8 @@ namespace mario_v1
     public partial class Form1 : Form
     {
         bool rightM, leftM, Jump;
-        int Gravity = 30;
         int Force;
-
+        int Gravity = 30;
         public Form1()
         {
             InitializeComponent();
@@ -19,27 +18,7 @@ namespace mario_v1
             {
                 Jump = true;
                 Force = Gravity;
-                Player.Image = Image.FromFile("marion_fly.png");
-            }
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (rightM == true) { Player.Left = Player.Left + 5; }
-            if (leftM == true) { Player.Left = Player.Left - 5; }
-            if (Jump == true)
-            {
-                // Falling ( if the player has jumped before)
-                Player.Top = Player.Top - Force;
-                Force = Force - 1;
-
-            }
-
-            if (Player.Top + Player.Height >= Screen1.Height)
-            {
-                Player.Top = Screen1.Height - Player.Height; // Stop falling at bottom
-                Jump = false;
-                Player.Image = Image.FromFile("marion_stand.png");
+                Player1.Image = Image.FromFile("mario_fly.png");
             }
         }
 
@@ -47,12 +26,32 @@ namespace mario_v1
         {
             if (e.KeyCode == Keys.Right) { rightM = false; }
             if (e.KeyCode == Keys.Left) { leftM = false; }
-            if (e.KeyCode == Keys.Escape) { this.Close(); } // Escape --> Exit
+            if (e.KeyCode == Keys.Escape) { this.Close(); }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (rightM == true) { Player1.Left += 5; }
+            if (leftM == true) { Player1.Left -= 5; }
+            if (Jump == true)
+            {
+                // Jump and Fall
+                Player1.Top -= Force;
+                Force -= 1;
+            }
+
+            // Avoid Player1 From falling beneath Screen1
+            if (Player1.Top + Player1.Height >= Screen1.Height)
+            {
+                Player1.Top = Screen1.Height - Player1.Height;
+                Jump = false;
+                Player1.Image = Image.FromFile("mario_stand.png");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Player.Top = Screen1.Height - Player.Height;
+            Player1.Top = Screen1.Height - Player1.Height;
         }
     }
 }
